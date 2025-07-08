@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🥘 Festival Gastronômico</title>
+
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        black: '#000',
+                        caramel: '#7b4a12',   // fundo “escuro caramelo”
+                        oldwhite: '#f5f5dc'    // texto “old‑white” retrô
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-black">
+
+    <!-- wrapper geral: 1 coluna (≤ md), 2 colunas lado‑a‑lado (≥ lg) -->
+    <main class="mx-auto px-4 lg:px-10 my-[100px] lg:my-[120px]
+               max-w-[768px] lg:max-w-none
+               lg:grid lg:grid-cols-2 ">
+
+        <!-- █████████ COMPONENTE BLACK █████████ -->
+        <section class="bg-caramel text-oldwhite font-serif
+                    
+                    flex flex-col lg:flex-row w-full flex-1 basis-3/5 px-6 py-4">
+
+            <!-- COLUNA ESQUERDA (60 %) -->
+            <div class="">
+                <h1 class="text-[100px] leading-none font-extrabold tracking-tight select-none">
+                    MENU
+                </h1>
+
+                <!-- link categoria -->
+                <a href="categoria/1" class="block text-4xl lg:text-5xl font-bold uppercase mt-6 mb-10 hover:underline">
+                    CATEGORIA
+                </a>
+
+                <!-- === PRATOS === -->
+                <h2 class="sr-only">Pratos</h2>
+                <ul class="space-y-6">
+                    <li class="flex justify-between text-lg font-bold">
+                        <span>Risotto Al Funghi</span><span>R$ 48</span>
+                    </li>
+                    <li class="text-sm italic text-oldwhite/80">
+                        <a href="prato/1" class="hover:underline">
+                            arroz arbóreo, cogumelos variados, parmesão
+                        </a>
+                    </li>
+
+                    <li class="flex justify-between text-lg font-bold">
+                        <span>Picanha Grelhada</span><span>R$ 72</span>
+                    </li>
+                    <li class="text-sm italic text-oldwhite/80">
+                        <a href="prato/1" class="hover:underline">
+                            picanha Angus, farofa crocante, vinagrete
+                        </a>
+                    </li>
+
+                    <li class="flex justify-between text-lg font-bold">
+                        <span>Moqueca Vegana</span><span>R$ 55</span>
+                    </li>
+                    <li class="text-sm italic text-oldwhite/80">
+                        <a href="prato/1" class="hover:underline">
+                            banana‑da‑terra, leite de coco, dendê suave
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- === DRINKS === -->
+                <a href="categoria/1" class="block text-3xl lg:text-4xl font-bold uppercase mt-16 mb-8 hover:underline">
+                    DRINKS
+                </a>
+                <ul class="space-y-6">
+                    <li class="flex justify-between text-lg font-bold">
+                        <span>Negroni Clássico</span><span>R$ 32</span>
+                    </li>
+                    <li class="text-sm italic text-oldwhite/80">
+                        <a href="prato/1" class="hover:underline">
+                            gin, Campari, vermute rosso
+                        </a>
+                    </li>
+
+                    <li class="flex justify-between text-lg font-bold">
+                        <span>Spritz Tropical</span><span>R$ 29</span>
+                    </li>
+                    <li class="text-sm italic text-oldwhite/80">
+                        <a href="prato/1" class="hover:underline">
+                            espumante, maracujá, club‑soda
+                        </a>
+                    </li>
+
+                    <li class="flex justify-between text-lg font-bold">
+                        <span>Mocktail Hibisco</span><span>R$ 24</span>
+                    </li>
+                    <li class="text-sm italic text-oldwhite/80">
+                        <a href="prato/1" class="hover:underline">
+                            chá de hibisco, limão‑siciliano, melado
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- === ESPECIAIS === -->
+                <a href="categoria/1" class="block text-3xl lg:text-4xl font-bold uppercase mt-16 mb-8 hover:underline">
+                    ESPECIAIS
+                </a>
+                <ul class="space-y-6 pb-10">
+                    <li class="flex justify-between text-lg font-bold">
+                        <span>Degustação do Chef</span><span>R$ 120</span>
+                    </li>
+                    <li class="text-sm italic text-oldwhite/80">
+                        <a href="prato/1" class="hover:underline">
+                            sequência surpresa em 5 etapas
+                        </a>
+                    </li>
+
+                    <li class="flex justify-between text-lg font-bold">
+                        <span>Combo Veggie</span><span>R$ 98</span>
+                    </li>
+                    <li class="text-sm italic text-oldwhite/80">
+                        <a href="prato/1" class="hover:underline">
+                            entrada + prato principal + sobremesa sem proteína animal
+                        </a>
+                    </li>
+
+                    <li class="flex justify-between text-lg font-bold">
+                        <span>Wine Flight</span><span>R$ 140</span>
+                    </li>
+                    <li class="text-sm italic text-oldwhite/80">
+                        <a href="prato/1" class="hover:underline">
+                            4 taças de rótulos selecionados
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+           
+        </section>
+
+        <!-- ░░ Exemplo de segundo “black” (aparece ao lado em telas ≥lg) ░░ -->
+        <section class="bg-caramel text-oldwhite font-serif
+                     
+                    flex flex-col lg:flex-row w-full flex-1 basis-1/5 px-6 py-4">
+                <div class="flex flex-col h-full gap-4">
+                    <img src="../assets/food1.png" class="flex-1 w-full object-cover rounded-lg" />
+                    <img src="../assets/food1.png" class="flex-1 w-full object-cover rounded-lg" />
+                    <img src="../assets/food1.png" class="flex-1 w-full object-cover rounded-lg" />
+                </div>
+           
+        </section>
+    </main>
+</body>
+
+</html>
