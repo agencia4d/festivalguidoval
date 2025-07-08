@@ -1,0 +1,169 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+
+<body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#fbfaf9] justify-between group/design-root overflow-x-hidden"
+        style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+        <div>
+            <div class="flex items-center bg-[#fbfaf9] p-4 pb-2 justify-between">
+                <h2 class="text-[#191410] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">
+                    Foodie Fest</h2>
+                <div class="flex w-12 items-center justify-end">
+                    <button
+                        class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 bg-transparent text-[#191410] gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+                        <div class="text-[#191410]" data-icon="MagnifyingGlass" data-size="24px" data-weight="regular">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <h2 class="text-[#191410] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Today's
+                Weather</h2>
+            <div class="p-4">
+                <div class="flex items-stretch justify-between gap-4 rounded-xl">
+                    <div class="flex flex-col gap-1 flex-[2_2_0px]">
+                        <p class="text-[#191410] text-base font-bold leading-tight">Partly Cloudy</p>
+                        <p class="text-[#8e7357] text-sm font-normal leading-normal">22°C</p>
+                    </div>
+                    <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDcMeOlWACT9EGSpHzoznYQz12RGQgZ51UR3iqvVsnM88leHiCbJJ6H-INErbB54Ea12mNkUF3mqemhjxihZAaLaK5WRh3opFrDVG0KKeuOF6hW-H1L89lZKT27wbtTUOfEQD-Ai5VUmQAP6kz2aSmKYEpqn7RuKHYSGGqNgaxkpQmH9Amobq5wE6KAP-ZvvD7LfG5PNIvnauI4U88C7jQosljE6bP0ol2xt_LDLETpHDgpKQKRhCs4kzUNMXthwrn-Px9BsYgD1WLr");'>
+                    </div>
+                </div>
+            </div>
+            <h2 class="text-[#191410] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Featured
+            </h2>
+            <div
+                class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+                <div class="flex items-stretch p-4 gap-3">
+                    <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                        <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC7YonIQQr5dyVSSKz85Jm76LVNtA4SonCpmfd8D08vJi_dqHIztvJCaDf9USNSldidn1PWpTI6bf137pA3QG-E3bGMudBXABMm66bBBdEMNYSPkr4fwy_PIt8rC4IJFo-fvQer3uaaUpJtyzDxT48qA9BgfIH4qyc8mcsjDsc2nfyfZQYyGDd1IQbo-y-ri5WrAOcQfu6W0e0AOuZzmjKQYaMMqZHJdWvRHgyY3waM3MV4zBpF7rVjeN17BQit-HgI2KevcPvB4mfi");'>
+                        </div>
+                        <div>
+                            <p class="text-[#191410] text-base font-medium leading-normal">Taco Fiesta</p>
+                            <p class="text-[#8e7357] text-sm font-normal leading-normal">Authentic Mexican tacos</p>
+                        </div>
+                    </div>
+                    <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                        <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCMLv6M99vj9XRmcNvw7ItDjRXB4-3sKfZ6XUH5W4hE4fS1cRxQ1_HvDj866V8LjXQq66efTKGq9K-vL3nkHv8cnzBn9Sh9WwVvvZ4y1rD682Dsk2ZaX53x8vWhy438B3XMSqzS0N_DjP9prei0GBWCu1kytaFNumsbwCrj6cA4V9e0VcNkZry5gg1nLDegPJ_WiRc8KederPXzJ2GMITA4VZKm0yrjCsg51z0OuD2T2qUd5aJOXox0rfFch5nqQZIoJlbv-SVn9onl");'>
+                        </div>
+                        <div>
+                            <p class="text-[#191410] text-base font-medium leading-normal">Burger Bliss</p>
+                            <p class="text-[#8e7357] text-sm font-normal leading-normal">Gourmet burgers and fries</p>
+                        </div>
+                    </div>
+                    <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                        <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDm2J5az-laukrEPTvvOGUnUlkrZDUPj34Ufxbqf9OWhQtBRzq0o9IC51qLyRr9J4lXjhDnmh9qu_5FQ6tQ0_E8zkLQSrpB7iYdTrXernegHfSgWe6OCJwUAxuDXiRRkWVlq44ta1Gb5WszWdyIDHSaBd-O5XRbchzcAnucxa-f43ShQBX-HKOlcZutn6GPGZYHNPdtwa5mKxleek05Y5xbPoVsLLCab74b1h8DkFDZwPhj8jKWORIZd9hNhlwhpicmZYEPOQhqFKK5");'>
+                        </div>
+                        <div>
+                            <p class="text-[#191410] text-base font-medium leading-normal">Sweet Treats</p>
+                            <p class="text-[#8e7357] text-sm font-normal leading-normal">Decadent desserts and pastries
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="text-[#191410] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Explore
+            </h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#e4dbd3] bg-[#fbfaf9] p-4 items-center">
+                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg w-10 shrink-0"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA17M6Ol4rJjwO3DyQkuEqxJM4gaivcG5n3Xpvvd9oi8Mv4U_mgIC5QBgC2OXb0dc2qJN2IwEDPparJdze8UqKP_xb3rGuuyasbPQMukfjgve5NfYpKcvz4iYEblZEeSx7o5Pe-ZStfGThsAE-_ILrwTd8Nwuoh6CQVcIMiQghRQziGfnnV6fEAXPCEUHWoWPvr6a4o65FmvsaibVB9QJxndjT5L-V8mzPd166hqjiNMLZmDarRKAmz2UjCmQjE2igrTM8G9SGLOrXL");'>
+                    </div>
+                    <h2 class="text-[#191410] text-base font-bold leading-tight">Asian Fusion</h2>
+                </div>
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#e4dbd3] bg-[#fbfaf9] p-4 items-center">
+                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg w-10 shrink-0"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBoaHTEyCeTk3BSnx-zNBS1yhrKUT5wYTxOysNqn2i02rpXlPohtubjVUOjo1on_CqMy0lri2g2eExx_c7u2trIsl3Psw2n6PAj1J0JSiqjToK-nvI3IatB_C9KTPc8metM8W8ulL_uL88qaKcfaXA6sgasCrmYx-kORPPkVoLtzcvOXDA3FOovqnaGsMVryB3I5RrwyISmIMlGkAmfY0PUJfu9-3vs21_43hjMt8B4D3DaGfk7GgjAYn884y1noRL19W2MIk_zS2w-");'>
+                    </div>
+                    <h2 class="text-[#191410] text-base font-bold leading-tight">BBQ Pit</h2>
+                </div>
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#e4dbd3] bg-[#fbfaf9] p-4 items-center">
+                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg w-10 shrink-0"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB9Ko3C9RjrYeI72yKNaghOmzRiezFxgmrCILvaCajEznwb6qYbDRxMQbx9fJ8-9AvZ6nflbbVHvA_t4jjAiQtsUw5_uNzN8COtfdy4I733NTdNEcojikfuLbktSxXcX_z0R4aO2tLfNWTQom-mna6sUl3_RBpS53alMVjdMWy81rOggonPnV4TLABOS4cBY_PlB81fYNlUhQOJm53QKbElASzVCgxc8tcOOPWDXfW-4ofXbGsovVnvfXW0bIdrL-LrBEtYcCIyuqqU");'>
+                    </div>
+                    <h2 class="text-[#191410] text-base font-bold leading-tight">Vegan Delights</h2>
+                </div>
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#e4dbd3] bg-[#fbfaf9] p-4 items-center">
+                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg w-10 shrink-0"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB5DIhjAwH0uTPtUbLkVOta_-S9EXTG3Cu5_DA5K9KKQmhO3tW6tnfVsHtN4_IHNmgc26fzLfSoutlGoPMuhpGqws7X7ztOScmJa_9nVIyOg0E7CpsAik1BzXdGx3o2oxanzIbV0JMbHEl4mEwKtQD17JuW4dflIswvgpX-4YvEzgR-u1su2G4_YPblTrapQeCIw8tW43fuGWIV27Txfo_RrKhFQmQndaQT3wvRG9CYYmk6DzYbf4ZvLrXjcvAQjkqFpnITNd_NZ254");'>
+                    </div>
+                    <h2 class="text-[#191410] text-base font-bold leading-tight">Seafood Shack</h2>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="flex gap-2 border-t border-[#f1ede9] bg-[#fbfaf9] px-4 pb-3 pt-2">
+                <a class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-[#191410]"
+                    href="#">
+                    <div class="text-[#191410] flex h-8 items-center justify-center" data-icon="House" data-size="24px"
+                        data-weight="fill">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <p class="text-[#191410] text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
+                </a>
+                <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#8e7357]" href="#">
+                    <div class="text-[#8e7357] flex h-8 items-center justify-center" data-icon="MapPin" data-size="24px"
+                        data-weight="regular">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <p class="text-[#8e7357] text-xs font-medium leading-normal tracking-[0.015em]">Map</p>
+                </a>
+                <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#8e7357]" href="#">
+                    <div class="text-[#8e7357] flex h-8 items-center justify-center" data-icon="Calendar"
+                        data-size="24px" data-weight="regular">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <p class="text-[#8e7357] text-xs font-medium leading-normal tracking-[0.015em]">Schedule</p>
+                </a>
+                <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#8e7357]" href="#">
+                    <div class="text-[#8e7357] flex h-8 items-center justify-center" data-icon="Heart" data-size="24px"
+                        data-weight="regular">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,147.61,146.24,196.15,128,206.8Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <p class="text-[#8e7357] text-xs font-medium leading-normal tracking-[0.015em]">Favorites</p>
+                </a>
+            </div>
+            <div class="h-5 bg-[#fbfaf9]"></div>
+        </div>
+    </div>
+</body>
+
+</html>
