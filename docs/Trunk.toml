@@ -1,0 +1,15 @@
+[build]
+target = "index.html"
+filehash = false
+
+[[copy]]
+source = "assets"
+dest = "assets"
+
+[env]
+API_URL = { source = "file", path = ".env", kind = "string" }
+
+[watch]
+ignore = ["tailwind.config.js"]
+
+TRUNK_PUBLIC_URL="festivalguidoval/"
