@@ -1,0 +1,14 @@
+* {
+
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --primary: rgb(255,200,10),
+    --light-color: rgb(0,200,10),
+}
+
+.overflow-x-auto {
+    scrollbar-width: none;
+}
