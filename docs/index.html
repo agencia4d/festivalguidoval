@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="festivalguidoval/style.css" integrity="sha384-cglpr5s6b5kmP77lJ+XxBbq8kD1MuW7BZJTzZ3zKXXOSqwRzQcHmfl6taFjRCaQe"/>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
     
 <script type="module">
-import init, * as bindings from 'festivalguidoval/festiva.js';
-const wasm = await init({ module_or_path: 'festivalguidoval/festiva_bg.wasm' });
+import init, * as bindings from '/festivalguidoval/festiva.js';
+const wasm = await init({ module_or_path: '/festivalguidoval/festiva_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -18,33 +17,30 @@ window.wasmBindings = bindings;
 dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script>
+    <link rel="stylesheet" href="/festivalguidoval/style.css" integrity="sha384-cglpr5s6b5kmP77lJ+XxBbq8kD1MuW7BZJTzZ3zKXXOSqwRzQcHmfl6taFjRCaQe"/>
+    
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
     <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
         href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" />
-    
+
     <title>🥘 Festival Gastronômico </title>
 
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />    
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <base href="festivalguidoval/" />
-<link rel="modulepreload" href="festivalguidoval/festiva.js" crossorigin="anonymous" integrity="sha384-ghxjHYddMCAGOA6fDdIWwq97tES5u2oBwIFBgaOPr6wh2imnx9prM2i47r3i7Ch0"><link rel="preload" href="festivalguidoval/festiva_bg.wasm" crossorigin="anonymous" integrity="sha384-wgOVvbOSaL2OKzHjHcoi7FiecKt28lWFgMm51o1cdHsRwm2YXmcNN9OFym8EjKTY" as="fetch" type="application/wasm"></head>
+    <base href="/festivalguidoval/" />
+<link rel="modulepreload" href="/festivalguidoval/festiva.js" crossorigin="anonymous" integrity="sha384-HRowP/755iC+MOpZMdHN042BGCaUN4MbD6fB8KudCG1ooW8nUU43o+s+ExlZKAzp"><link rel="preload" href="/festivalguidoval/festiva_bg.wasm" crossorigin="anonymous" integrity="sha384-wXQBkPB8VVuVu3iVqXkCuFRtSg2kkmoBobjqOaND3hOAZ+HI4pdU7oi8+6LDHvdz" as="fetch" type="application/wasm"></head>
+
 <body>
 
-    <main>
-
-        <div class="app">
-
-        </div>
-
-    </main>
-   
     <div class="relative flex size-full min-h-screen flex-col bg-[#fcfaf8] justify-between group/design-root overflow-x-hidden"
         style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
-        
+
+        <div id="app"></div>
+
         <div>
             <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
                 <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
-                    <a class="text-[#9c7349] text-base font-normal leading-normal min-w-40" href="#">Praça Santo Antônio 71, Centro, Guidoval - MG, 36515-000</a>
+                    <a class="text-[#9c7349] text-base font-normal leading-normal min-w-40" href="#">Praça Santo Antônio
+                        71, Centro, Guidoval - MG, 36515-000</a>
                     <a class="text-[#9c7349] text-base font-normal leading-normal min-w-40" href="#">(32) 98405-2604</a>
                     <a class="text-[#9c7349] text-base font-normal leading-normal min-w-40"
                         href="#">agencia04d@gmail.com</a>
@@ -76,7 +72,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
             <div class="h-5 bg-[#fcfaf8]"></div>
         </div>
     </div>
-     
+
 </body>
 
 
