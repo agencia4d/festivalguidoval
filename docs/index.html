@@ -7,8 +7,8 @@
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
     
 <script type="module">
-import init, * as bindings from '/festivalguidoval/festiva.js';
-const wasm = await init({ module_or_path: '/festivalguidoval/festiva_bg.wasm' });
+import init, * as bindings from '/festiva.js';
+const wasm = await init({ module_or_path: '/festiva_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -17,8 +17,7 @@ window.wasmBindings = bindings;
 dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script>
-    <link rel="stylesheet" href="/festivalguidoval/style.css" integrity="sha384-cglpr5s6b5kmP77lJ+XxBbq8kD1MuW7BZJTzZ3zKXXOSqwRzQcHmfl6taFjRCaQe"/>
-    
+    <link rel="stylesheet" href="/style.css" integrity="sha384-cglpr5s6b5kmP77lJ+XxBbq8kD1MuW7BZJTzZ3zKXXOSqwRzQcHmfl6taFjRCaQe"/>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
     <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
         href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" />
@@ -26,8 +25,10 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
     <title>🥘 Festival Gastronômico </title>
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <base href="/festivalguidoval/" />
-<link rel="modulepreload" href="/festivalguidoval/festiva.js" crossorigin="anonymous" integrity="sha384-1j+AfVsTkA03aHMnr1LGFWLKYkdbetwovL0Rdl9kz8qfoNAVRVYQAlSo555Nfnt9"><link rel="preload" href="/festivalguidoval/festiva_bg.wasm" crossorigin="anonymous" integrity="sha384-pz47wGcdnOW3oOvHNAKJTQtrPK9P/btooplhg0zVks4pw5k86XfSJruS9S+U4Wub" as="fetch" type="application/wasm"></head>
+    <base href="/" />
+    
+    
+<link rel="modulepreload" href="/festiva.js" crossorigin="anonymous" integrity="sha384-eMbqb/5UTVc08rxC689o3K2yiB+dpXaKEIc8DPro0YiLhGLELjjTrjOdDhajxMH4"><link rel="preload" href="/festiva_bg.wasm" crossorigin="anonymous" integrity="sha384-0XE/dvJezPFj84uIhB5VXwGOcWeXC3fyhV6PjYSdmPib7gjTsUl7HbF6ziSPWSny" as="fetch" type="application/wasm"></head>
 
 <body>
 
@@ -37,12 +38,12 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
         <div id="app"></div>
 
         <div>
-            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
-                <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
-                    <a class="text-[#9c7349] text-base font-normal leading-normal min-w-40" href="#">Praça Santo Antônio
+            <footer class="flex flex-col gap-2 px-5 py-10 text-center @container">
+                <div class="flex flex-wrap items-center justify-center gap-4 @[480px]:flex-row @[480px]:justify-around">
+                    <a class="text-[#9c7349] text-base font-sm leading-normal min-w-40" href="#">Praça Santo Antônio
                         71, Centro, Guidoval - MG, 36515-000</a>
-                    <a class="text-[#9c7349] text-base font-normal leading-normal min-w-40" href="#">(32) 98405-2604</a>
-                    <a class="text-[#9c7349] text-base font-normal leading-normal min-w-40"
+                    <a class="text-[#9c7349] text-base font-sm leading-normal min-w-40" href="#">(32) 98405-2604</a>
+                    <a class="text-[#9c7349] text-base font-sm leading-normal min-w-40"
                         href="#">agencia04d@gmail.com</a>
                 </div>
                 <div class="flex flex-wrap justify-center gap-4">
@@ -67,7 +68,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
                         </div>
                     </a>
                 </div>
-                <p class="text-[#9c7349] text-base font-normal leading-normal">Agência 4D</p>
+                <p class="text-[#9c7349] text-sm font-normal leading-normal">Agência 4D</p>
             </footer>
             <div class="h-5 bg-[#fcfaf8]"></div>
         </div>
