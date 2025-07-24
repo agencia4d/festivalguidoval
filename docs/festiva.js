@@ -231,19 +231,19 @@ function debugString(val) {
     return className;
 }
 function __wbg_adapter_42(arg0, arg1, arg2) {
-    wasm.closure1449_externref_shim(arg0, arg1, arg2);
-}
-
-function __wbg_adapter_45(arg0, arg1) {
-    wasm._dyn_core__ops__function__FnMut_____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__hc4dcd30e6e16b707(arg0, arg1);
-}
-
-function __wbg_adapter_48(arg0, arg1, arg2) {
     wasm.closure1523_externref_shim(arg0, arg1, arg2);
 }
 
+function __wbg_adapter_45(arg0, arg1) {
+    wasm._dyn_core__ops__function__FnMut_____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h7341aa875d8c9011(arg0, arg1);
+}
+
+function __wbg_adapter_48(arg0, arg1, arg2) {
+    wasm.closure1594_externref_shim(arg0, arg1, arg2);
+}
+
 function __wbg_adapter_51(arg0, arg1, arg2) {
-    wasm.closure1540_externref_shim(arg0, arg1, arg2);
+    wasm.closure1611_externref_shim(arg0, arg1, arg2);
 }
 
 async function __wbg_load(module, imports) {
@@ -315,8 +315,8 @@ function __wbg_get_imports() {
         const ret = arg0.childNodes;
         return ret;
     };
-    imports.wbg.__wbg_clearTimeout_5a54f8841c30079a = function(arg0) {
-        const ret = clearTimeout(arg0);
+    imports.wbg.__wbg_clearInterval_dd1e598f425db353 = function(arg0) {
+        const ret = clearInterval(arg0);
         return ret;
     };
     imports.wbg.__wbg_cloneNode_e35b333b87d51340 = function() { return handleError(function (arg0) {
@@ -737,12 +737,12 @@ function __wbg_get_imports() {
     imports.wbg.__wbg_setAttribute_2704501201f15687 = function() { return handleError(function (arg0, arg1, arg2, arg3, arg4) {
         arg0.setAttribute(getStringFromWasm0(arg1, arg2), getStringFromWasm0(arg3, arg4));
     }, arguments) };
+    imports.wbg.__wbg_setInterval_ed3b5e3c3ebb8a6d = function() { return handleError(function (arg0, arg1) {
+        const ret = setInterval(arg0, arg1);
+        return ret;
+    }, arguments) };
     imports.wbg.__wbg_setItem_212ecc915942ab0a = function() { return handleError(function (arg0, arg1, arg2, arg3, arg4) {
         arg0.setItem(getStringFromWasm0(arg1, arg2), getStringFromWasm0(arg3, arg4));
-    }, arguments) };
-    imports.wbg.__wbg_setTimeout_db2dbaeefb6f39c7 = function() { return handleError(function (arg0, arg1) {
-        const ret = setTimeout(arg0, arg1);
-        return ret;
     }, arguments) };
     imports.wbg.__wbg_set_11cd83f45504cedf = function() { return handleError(function (arg0, arg1, arg2, arg3, arg4) {
         arg0.set(getStringFromWasm0(arg1, arg2), getStringFromWasm0(arg3, arg4));
@@ -922,20 +922,20 @@ function __wbg_get_imports() {
         const ret = false;
         return ret;
     };
-    imports.wbg.__wbindgen_closure_wrapper2339 = function(arg0, arg1, arg2) {
-        const ret = makeClosure(arg0, arg1, 1450, __wbg_adapter_42);
+    imports.wbg.__wbindgen_closure_wrapper2447 = function(arg0, arg1, arg2) {
+        const ret = makeClosure(arg0, arg1, 1524, __wbg_adapter_42);
         return ret;
     };
-    imports.wbg.__wbindgen_closure_wrapper2520 = function(arg0, arg1, arg2) {
-        const ret = makeMutClosure(arg0, arg1, 1517, __wbg_adapter_45);
+    imports.wbg.__wbindgen_closure_wrapper2622 = function(arg0, arg1, arg2) {
+        const ret = makeMutClosure(arg0, arg1, 1590, __wbg_adapter_45);
         return ret;
     };
-    imports.wbg.__wbindgen_closure_wrapper2536 = function(arg0, arg1, arg2) {
-        const ret = makeMutClosure(arg0, arg1, 1524, __wbg_adapter_48);
+    imports.wbg.__wbindgen_closure_wrapper2640 = function(arg0, arg1, arg2) {
+        const ret = makeMutClosure(arg0, arg1, 1595, __wbg_adapter_48);
         return ret;
     };
-    imports.wbg.__wbindgen_closure_wrapper2572 = function(arg0, arg1, arg2) {
-        const ret = makeMutClosure(arg0, arg1, 1541, __wbg_adapter_51);
+    imports.wbg.__wbindgen_closure_wrapper2676 = function(arg0, arg1, arg2) {
+        const ret = makeMutClosure(arg0, arg1, 1612, __wbg_adapter_51);
         return ret;
     };
     imports.wbg.__wbindgen_debug_string = function(arg0, arg1) {
