@@ -17,7 +17,7 @@ window.wasmBindings = bindings;
 dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script>
-    <link rel="stylesheet" href="/style.css" integrity="sha384-xk/yy4ng0/DU36F4mihfPooJeofaiRVK5R0QPNqidDODgPd66Z2FYxHSmxB+U9B4"/>
+    <link rel="stylesheet" href="/style.css" integrity="sha384-mGhzBn0u2CKXYibXt591EKkBMJa8HIDRIhzFUrk+rpjIOWIRcyKZp4IXefk+tn7U"/>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
     <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
         href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" />
@@ -30,7 +30,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
     
     
     
-<link rel="modulepreload" href="/festiva.js" crossorigin="anonymous" integrity="sha384-4P+tHApcW9nN2Dnvo4DAyy5dWkNiCeJ5CoAMg83VlNbHPzEsRbLNSY7tWLEqtnHQ"><link rel="preload" href="/festiva_bg.wasm" crossorigin="anonymous" integrity="sha384-p8plxXRt20SsYGPZZVXUyJ1OiTmJAFkHI9MVlhm5EL64rJc2JUqbwOteS2Avmw91" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/festiva.js" crossorigin="anonymous" integrity="sha384-yNVidyVYEODQiPSQ4SYKgkQe1aF5AGNGjFNiBGjrB/+66v7NT2vr0JkGklbRXClO"><link rel="preload" href="/festiva_bg.wasm" crossorigin="anonymous" integrity="sha384-kUFUlC52iO8HKeCRD8vwJmaqmAH27EygDvYNImczZoflrEBRvo25PtUrt8H4uchJ" as="fetch" type="application/wasm"></head>
 
 <body>
 
@@ -77,9 +77,9 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 <footer>
     <div class="footer grid grid-cols-2 grid-rows-3 gap-2 sm:flex sm:h-[200px] sm:items-center sm:justify-around sm:overflow-hidden">
-        <div class="ml-10 flex items-center justify-around">
-            <div class="svg-wrapper  mt-6 mb-6 p-6"><img src="assets/agencia4d.svg" class="h-1/3"></div>
-            <div class="svg-wrapper  mt-2 mb-10 p-6"><img src="assets/agenciaef4.svg" class="h-1/3"></div>
+        <div class="ml-10 flex flex-col md:flex-row items-center justify-around gap-4 md:gap-10">
+            <div class="svg-wrapper  "><img src="assets/agencia4d.svg" class="h-1/3"></div>
+            <div class="svg-wrapper  "><img src="assets/agenciaef4.svg" class="h-1/3"></div>
         </div>
         <div class="svg-wrapper  mt-6 mb-6 p-6"><svg xmlns="http://www.w3.org/2000/svg" width="165.365mm" height="114.437mm"
                 version="1.1" fill="#a46639" stroke="white" stroke-width="5px"
@@ -93,7 +93,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
                 </g>
             </svg></div>
                 <div>
-                <p class="mb-4 text-xs text-gray-400">FOTOGRAFIA </p>
+                <p class="mb-4 text-xs text-gray-400 md-only">FOTOGRAFIA </p>
                 <div class="svg-wrapper"><img src="assets/caravela.png" class="h-1/3"></div>
             </div>
             <div class="svg-wrapper"><img src="assets/logo/prefeiturab.png" class="h-1/3"></div>
