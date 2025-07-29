@@ -1,0 +1,51 @@
+* {
+
+    margin: 0;
+    font-family: "Noto Sans", Plus Jakarta Sans;
+}
+
+:root {
+    --primary: rgb(255,200,10),
+    --light-color: rgb(0,200,10),
+}
+
+.overflow-x-auto {
+    scrollbar-width: none;
+}
+
+@media (max-width: 639px) {
+  .w-90vw-xs {
+    width: 90vw;
+  }
+}
+
+.svg-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.svg-wrapper svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.award {
+  background-color: #d1f2cc;
+  scale: 1.01;
+}
+
+.md-only {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .md-only {
+    display: block;
+  }
+}
